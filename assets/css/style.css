@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.btn {
+    padding: 10px 100px;
+    background-color: #61CE70;
+    color: #fff;
+    border: 0;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    animation: none;
+    background-color: #61CE70;
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5)url("../image/bg-cri-autista.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.banner .destaque {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 35rem;
+}
+
+.banner .logo {
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.banner .logo img {
+    width: 300px;
+    height: 100px;
+}
+
+.banner h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 1.5rem;
+}
+
+.banner p {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 1.5rem;
+}
+
+.informativos .container {
+    display: flex;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 30px;
+}
+
+.informativos .side-left img {
+    width: 500px;
+    height: 500px;
+}
+
+.informativos .side-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.3rem;
+}
+
+ .informativos .side-right h2 {
+    font-size: 20x;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #28C7EA;
+    padding-bottom: 1rem;
+}
+
+.informativos .side-right h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #CFA835;
+    padding-bottom: 1rem;
+}
+
+.informativos .side-right p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #7a7a7a;
+    padding-bottom: 1rem;
+}
+
+.informativos .side-right p span {
+    font-weight: 700;
+}
+.benefits {
+    text-align: center;
+    padding: 40px;
+    background-color: #EFEFEF;
+}
+
+.benefits h2 {
+    color: #b8860b; /* Cor dourada */
+    margin-bottom: 30px;
+    background-color: #EFEFEF;
+}
+
+.requirements {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.requirement {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.requirement img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.requirement h3 {
+    color: #b8860b; /* Cor dourada */
+    margin-bottom: 10px;
+}
+
+.requirement p {
+    color: #555;
+    font-size: 14px;
+    align-items: center;
+}
+
+.requirement:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.quem-somos .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 30px;
+}
+
+.quem-somos .quem-somos-side-left img {
+    width: 500px;
+    height: 700px;
+    border: 5px solid #CFA835;
+    border-radius: 2rem;
+}
+
+.quem-somos .quem-somos-side-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.3rem;
+}
+
+.quem-somos .quem-somos-side-right h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #CFA835;
+    padding-bottom: 1rem;
+}
+
+.quem-somos .quem-somos-side-right p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #7a7a7a;
+    padding-bottom: 1rem;
+}
+
+.quem-somos .quem-somos-side-right .negro p {
+    font-weight: bold;
+    color: #1da1f2;
+}
+
+.quem-somos .quem-somos-side-right p span {
+    font-weight: 700;
+}
+
+.atuacao {
+    text-align: center;
+    padding: 30px;
+    background-color: #EFEFEF;
+}
+.atuacao .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.atuacao .atuacao-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.atuacao .atuacao-item h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #CFA835;
+    padding-bottom: 1rem;
+}
+
+.atuacao .atuacao-item p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #7a7a7a;
+    padding-bottom: 1rem;
+}
+
+#testimonials {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+#testimonials h2 {
+    color: #d4af37;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    height: 200px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+}
+
+.testimonial {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.testimonial.active {
+    left: 0;
+    opacity: 1;
+}
+
+.testimonial-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.testimonial-content img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-info {
+    text-align: left;
+}
+
+.author-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.author-info .bold {
+    font-weight: 600;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+.contato {
+    text-align: center;
+    padding: 30px;
+    background-color: #EFEFEF;
+    position: relative;
+}
+
+.contato .area-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contato .area-descricao h2 {
+    font-size: 25px;
+    color: #CFA835;
+}
+
+.contato .area-descricao p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #515050;
+    color: #fff;
+    padding: 4rem;
+}
+
+.footer-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-area .logo img {
+    width: 200px;
+    height: 100px;
+}
+
+.area-dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+}
+
+.footer-area img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-area p {
+    font-size: 14px;
+}
+
+.footer-area .dias, .endereco {
+    align-items: center;
+}
+
+.footer-area .area-dados .tel,
+.whatsapp, .dias,
+.endereco {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-area .social-media .area-titulo h2{
+    font-size: 20px;
+    font-weight: none;
+    color: #fff;
+}
+
+.footer-area, .instagram {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media .area-titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-media .instagram a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove o sublinhado */
+    color: #fff; /* Altera a cor do texto */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    transition: color 0.3s; /* Adiciona uma transição para a cor */
+}
+
+.social-media .instagram a img {
+    margin-right: 10px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+.social-media .instagram a:hover {
+    color: #1da1f2; /* Altera a cor ao passar o mouse */
+}
+
+.social-media .instagram a p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
+.copy p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copy a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 900px) {
+    .banner {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .banner .destaque {
+        padding-top: 4rem;
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .btn {
+        padding: 10px 50px;
+        font-size: 18px;
+    }
+
+    .informativos .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+        gap: 30px;
+    }
+
+    .informativos .side-left img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .informativos .side-right h2 {
+        font-size: 20px;
+        line-height: 23px;
+        padding-bottom: 1rem;
+    }
+    
+    .informativos .side-right h1 {
+        font-size: 25px;
+        line-height: 25px;
+        padding-bottom: 1rem;
+    }
+    
+    .informativos .side-right p {
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 1rem;
+    }
+
+    .quem-somos .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 4rem;
+        gap: 30px;
+    }
+
+    .quem-somos .quem-somos-side-left img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .quem-somos .quem-somos-side-right h1 {
+        font-size: 25px;
+        line-height: 25px;
+        padding-bottom: 1rem;
+    }    
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .banner .destaque {
+        padding-top: 4rem;
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+        width: 20rem;
+    }
+
+    .banner .logo img {
+        width: 200px;
+        height: 80px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .banner p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .btn {
+        padding: 8px 50px;
+        font-size: 10px;
+    }
+
+    .informativos .container {
+        padding: 2rem;
+    }
+
+    .informativos .side-left img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .informativos .side-right h2 {
+        font-size: 16px;
+        line-height: 16px;
+        padding-bottom: 1rem;
+    }
+    
+    .informativos .side-right h1 {
+        font-size: 20px;
+        line-height: 20px;
+        padding-bottom: 1rem;
+    }
+    
+    .informativos .side-right p {
+        font-size: 10px;
+        line-height: 10px;
+        padding-bottom: 1rem;
+    }
+
+    .requirements {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .requirement {        
+        width: 100%;
+    }
+
+    .quem-somos .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .quem-somos .quem-somos-side-left img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .quem-somos .quem-somos-side-right h1 {
+        font-size: 20px;
+        line-height: 20px;
+        padding-bottom: 1rem;
+    }
+    
+    .quem-somos .quem-somos-side-right p {
+        font-size: 10px;
+        line-height: 10px;
+        padding-bottom: 1rem;
+    }
+
+    .atuacao .atuacao-item h1 {
+        font-size: 20px;
+        line-height: 20px;
+        padding-bottom: 1rem;
+    }
+    
+    .atuacao .atuacao-item p {
+        font-size: 10px;
+        line-height: 10px;
+        padding-bottom: 1rem;
+    }
+
+    .author-info p {
+        font-size: 10px;
+    }
+
+    .testimonial p {
+        font-size: 10px;
+    }
+
+    #testimonials {
+        padding: 2rem;
+    }
+
+    #testimonials h2 {
+        font-size: 20px;
+    }
+
+    .contato .area-descricao h2 {
+        font-size: 20px;
+    }
+    
+    .contato .area-descricao p {
+        font-size: 10px;
+    }
+    
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    .footer-area .logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-area .logo img {
+        width: 200px;
+        height: 80px;
+    }
+
+    .area-dados {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 2px;
+        width: 100%;
+    }
+
+    .footer-area img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .footer-area p {
+        font-size: 10px;
+        padding-bottom: 0.5rem;
+    }
+
+   /*  .footer-area .area-dados .tel,
+    .whatsapp, .dias,
+    .endereco {
+        display: flex;
+        align-items: left;
+    } */
+}
