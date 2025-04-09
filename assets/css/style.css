@@ -82,6 +82,10 @@ img {
   padding-bottom: 1.5rem;
 }
 
+.banner span {
+  color: #cfa835;
+}
+
 .banner p {
   font-size: 22px;
   font-weight: 700;
